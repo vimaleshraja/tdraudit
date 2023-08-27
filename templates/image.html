@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF to Images</title>
+</head>
+<body>
+    <h1>PDF to Images</h1>
+    {% for image in images %}
+    <img src="data:image/jpeg;base64,{{ image }}" alt="Page {{ loop.index }}">
+    {% endfor %}
+</body>
+</html>
